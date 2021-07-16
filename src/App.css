@@ -1,38 +1,73 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100% !important;
+  overflow: hidden;
+  background-color: #FFF5FD;
+}
+
+.app {
+  height: 100vh !important;
+  align-items: center !important;
+  vertical-align: middle;
+  display: flex;
+}
+
+.bingo-card {
+  background-color: #F8EDED;
+  border-radius: 3%;
+  border-color: #F6DFEB;
+  flex-wrap: wrap;
+  width: 90% !important;
+  justify-content: center;
+  margin: auto !important;
+  vertical-align: center !important;
+  align-items: center !important;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+.countdown-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-row{
+  padding: 1%;
+  align-items: center;
+}
+
+.card-col {
+  padding: 1%;
+}
+
+.card {
+  border-color: #F6DFEB;
+  flex: 1 0 auto;
+  margin: 1% .5% auto !important;
+  padding: 15%;
+  color: #E4BAD4;
+  font-size: .8em;
+  font-weight: 600;
+  text-align: right;
+}
+
+.i-card{
+  padding: 5%;
+}
+
+.free-space{
+  background-color: #FFF5FD;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bingo-btn {
+  color: #F6DFEB;
+  border-color: #F8EDED;
+  background-color: #FFF5FD;
+  font-weight: 600;
+  padding: 1%;
+  margin-left: 25%;
 }
